@@ -23,5 +23,6 @@ public class TaskManager {
 
     public void exit() {
         // leave for iteration 2
-    }
+    System.out.println("Exiting Task Manager...")
+    System.exit(0);}
 }
