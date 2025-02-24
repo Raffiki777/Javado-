@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.Scanner;  //imports scanner class for user input
 
 
 public class Main {
@@ -24,12 +24,14 @@ public class Main {
                     manager.addTask(task);
                     break;
                 case 2:
-                    System.out.println("Tasks: " + manager.listTasks());
+                    for (Task task : manager.listTasks()) {
+                        System.out.println("Tasks: " + manager.listTasks());
+                    }
                     break;
                 case 3:
                     System.out.print("Enter task to delete: ");
-                    String tas = scanner.nextLine();
-                    manager.deleteTask(tas);
+                    String taskToDelete = scanner.nextLine();
+                    manager.deleteTask(taskToDelete);
                     System.out.println("Deleting...");
                     break;
                 case 4:
