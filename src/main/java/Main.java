@@ -24,8 +24,9 @@ public class Main {
                     manager.addTask(task);
                     break;
                 case 2:
-                    for (Task task : manager.listTasks()) {
-                        System.out.println("Tasks: " + manager.listTasks());
+                    System.out.print("Enter task: ");
+                    for (Task t : manager.listTasks()) {
+                        System.out.println(t);
                     }
                     break;
                 case 3:

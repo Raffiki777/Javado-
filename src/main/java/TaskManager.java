@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class TaskManager {
-    private List<Task> tasks; // hint: will change in iteration 3
+    private final List<Task> tasks; // hint: will change in iteration 3
 
     public TaskManager() {
         // Initialize tasks list
@@ -18,7 +18,7 @@ public class TaskManager {
         return new ArrayList<>(tasks);
     }
 
-    public void deleteTask(String task) {
+    public void deleteTask(String description) {
         // leave for iteration 4
         tasks.removeIf(task -> task.getDescription().equals(description));
     }

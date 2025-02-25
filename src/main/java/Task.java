@@ -1,6 +1,6 @@
 public class Task {
 //    leave empty this is for iteration 3
-    private String description;
+    private final String description;
     private boolean isCompleted;
 
     public Task(String description) {
